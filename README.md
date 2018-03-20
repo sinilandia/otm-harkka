@@ -25,3 +25,7 @@ _Mitä tapahtuu **jos** yhdistelee erilaisia tyylejä?_
 ### Paikallisia muutoksia
 Töitä on kiva tehdä etänä. Nykypäivän työ ei ole enää riippuvainen paikasta tai ajasta.
 Siksi ei ole pölynimurimyyjiä, jotka kiertävät ovelta ovelle.
+
+
+### Epäsynkrooni
+1. Ensin paikallisia muutoksia.
