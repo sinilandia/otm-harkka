@@ -25,3 +25,7 @@ kurssit
                                     └── MaksukorttiTest.java
 
 15 directories, 5 files
+
+
+### Epäsynkrooni
+Muutoksia GitHubissa.
