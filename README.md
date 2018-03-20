@@ -8,7 +8,7 @@ Olen **otm** ensimmäisen viikon  *(vk1)*  harjoitukset.
 _Mitä tapahtuu **jos** yhdistelee erilaisia tyylejä?_
 
 
-##Ruokalista
+## Ruokalista
 
 * Maito, no cow wow !
 * Vuusto
