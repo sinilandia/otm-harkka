@@ -3,17 +3,12 @@ Hei! Olen maailma.
 Requirements
 GitX runs on Mac OS X 10.5 Leopard and Mac OS X 10.6 Snow Leopard. Because it uses features like Garbage Collection, you can't compile it on earlier systems. GitX also requires a fairly recent Git -- version 1.6.0 and higher are all supported.
 
+GitX:n käytössä kannattaa mainita, että ei toimi uusimmilla Maceilla. :( 
+Tosin GitHubillahan on nykyään oma visuaalinen GitHub Desktop. Tosi kätsy.
+Ei tarvii terminalia hehe.
 
 
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Explore
- @sinilandia
-Sign out
+
 3
 3 12 mluukkai/otm-2018
  Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights
