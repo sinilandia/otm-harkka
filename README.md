@@ -14,6 +14,9 @@ _Mitä tapahtuu **jos** yhdistelee erilaisia tyylejä?_
 * Vuusto
 * Shampanja
 
+
 ## Linkkejä
+
 [gitlog.txt](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko1/gitlog.txt)
+
 [komentorivi.txt](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko1/komentorivi.txt)
