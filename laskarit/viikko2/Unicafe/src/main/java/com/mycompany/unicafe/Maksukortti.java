@@ -14,6 +14,7 @@ public class Maksukortti {
     }
  
     public void lataaRahaa(int lisays) {
+        //pystyy lataamaan negatiivista rahaa
         this.saldo += lisays;
     }
  
