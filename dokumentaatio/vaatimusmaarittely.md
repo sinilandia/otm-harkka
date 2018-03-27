@@ -10,6 +10,15 @@ viisauden______valas (vastaus:hammas // viisaudenhammas - hammasvalas)
 ## Käyttäjäroolit
 - tavallinen käyttäjä
 
+## Käyttöliittymäluonnos
+Sovellus koostuu viidestä eri näkymästä: kirjautuminen, luo uusi käyttäjä, vastaa tehtävään ja vastaukset (oikein/väärin).
+
+<img src="https://raw.githubusercontent.com/sinilandia/otm-harkka/master/dokumentaatio/kuvat/kayttoliittymaluonnos_v1.JPG" width="750">
+
+Sovellus aukeaa kirjautumisnäkymään, missä voi kirjautua tai luoda uuden käyttäjän.
+Tehtävänäkymässä sovellus arpoo kysymyksiä, joihin käyttäjän tulee vastata.
+Vastaus-näkymässä näkyy vastasiko käyttäjä oikein vai väärin, ja jälkimmäisessä tapauksessa oikeat vastaukset.
+
 ## Toiminnallisuudet
 Tavallinen käyttäjä:
 - voi luoda itselleen tunnukset järjestelmään 
@@ -23,6 +32,8 @@ Tavallinen käyttäjä:
 ## Toimintaympäristön rajoitteet
 - tämän tehtävän tehtävänannossa vaadittu, että tieto paikallisesti käyttäjän koneella
 - toimii Linux- ja OS-järjestelmillä
+
+
 
 ## Jatkokehitysideoita
 - jos jää aikaa, voi tehdä Telegram-botin > voi kilpailla kavereita vastaan
