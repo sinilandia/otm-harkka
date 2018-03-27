@@ -4,6 +4,7 @@
 Sovelluksen avulla voi harjoitella erilaisia sanaleikkejä, joissa pitää keksiä keskimmäinen sana, joka muodostaa yhdyssanan sekä edessä että takana olevan sanan kanssa. 
 
 Esim.
+
 viini _ _ _ puuro (vastaus: marja // viinimarja - marjapuuro)
 
 viisauden _ _ _ valas (vastaus:hammas // viisaudenhammas - hammasvalas)
