@@ -5,9 +5,13 @@
 [gitlog.txt](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko1/gitlog.txt)
 
 [komentorivi.txt](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko1/komentorivi.txt)
+
 [vaatismusmaarittelu.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/vaatimusmaarittely.md)
+
 [tuntikirjanpito.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/tuntikirjanpito.md)
+
 [Maksukortti](https://github.com/sinilandia/otm-harkka/tree/master/laskarit/viikko2/Maksukortti)
+
 [Unicafe](https://github.com/sinilandia/otm-harkka/tree/master/laskarit/viikko2/Unicafe)
 
 
