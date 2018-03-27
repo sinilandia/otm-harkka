@@ -5,7 +5,8 @@ Sovelluksen avulla voi harjoitella erilaisia sanaleikkejä, joissa pitää keksi
 
 Esim.
 viini _ _ _ puuro (vastaus: marja // viinimarja - marjapuuro)
-viisaudem _ _ _ valas (vastaus:hammas // viisaudenhammas - hammasvalas)
+
+viisauden _ _ _ valas (vastaus:hammas // viisaudenhammas - hammasvalas)
 
 ## Käyttäjäroolit
 - tavallinen käyttäjä
