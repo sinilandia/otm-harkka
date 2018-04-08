@@ -9,7 +9,7 @@
 | 25.3. | 0.5  | vk2 tehtävät |
 | 26.3. | 3    | vk2 tehtävät |
 | 27.3. | 4    | vk2 tehtävät + alustava määrittelydokumentti |
-|  8.4. | 1.5  | vk3 laskarit |
+|  8.4. | 2.25 | vk3 laskarit |
 |    .  | 0    |  |
 |       | 0    |  |
 |    .  | 0    |  |
