@@ -6,38 +6,23 @@
 
 [komentorivi.txt](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko1/komentorivi.txt)
 
+[tuntikirjanpito.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Harjoitustyö
+
 [vaatismusmaarittelu.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
-[tuntikirjanpito.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+## Viikko 2
 
 [Maksukortti](https://github.com/sinilandia/otm-harkka/tree/master/laskarit/viikko2/Maksukortti)
 
 [Unicafe](https://github.com/sinilandia/otm-harkka/tree/master/laskarit/viikko2/Unicafe)
 
+## Viikko 3
 
+[Monopoli](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko3/monopoli.png)
 
-## Harjoittelua...
-Olen **otm** ensimmäisen viikon  *(vk1)*  harjoitukset.
+[Bensamoottori](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko3/otm%20vk3%20teht3%20bensamoottori.png)
 
-
-## Alaotsikko: Gittiä
-
-_Mitä tapahtuu **jos** yhdistelee erilaisia tyylejä?_
-
-
-## Ruokalista
-
-* Maito, no cow wow !
-* Vuusto
-* Shampanja
-
-
-
-
-### Paikallisia muutoksia
-Töitä on kiva tehdä etänä. Nykypäivän työ ei ole enää riippuvainen paikasta tai ajasta.
-Siksi ei ole pölynimurimyyjiä, jotka kiertävät ovelta ovelle.
-
-
-### Epäsynkrooni
-1. Ensin paikallisia muutoksia.
+[HSL](https://github.com/sinilandia/otm-harkka/blob/master/laskarit/viikko3/otm%20vk3%20teht4%20hsl.png)
