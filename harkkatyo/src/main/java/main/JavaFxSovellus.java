@@ -8,6 +8,7 @@
 
 package main;
 
+import java.sql.*;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -70,8 +71,21 @@ public class JavaFxSovellus extends Application {
         ikkuna.show();
     }
 
-    public static void main(String[] args) {
-        launch(JavaFxSovellus.class);
+    public static void main(String[] args) throws Exception {
+        //launch(JavaFxSovellus.class);
+        
+        Connection connection = DriverManager.getConnection("jdbc:sqlite:yhdysssanat.db");
+
+        Statement statement = connection.createStatement();
+
+        ResultSet resultSet = statement.executeQuery("SELECT * FROM Sanat");
+
+        if (resultSet.next()) {
+            System.out.println("Hei tietokantamaailma!");
+        } else {
+            System.out.println("Yhteyden muodostaminen epäonnistui.");
+        }
+        
     }
 }
 
