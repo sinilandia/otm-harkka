@@ -10,6 +10,12 @@
 | 26.3. | 3    | vk2 tehtävät |
 | 27.3. | 2    | vk2 tehtävät |
 |  8.4. | 2.25 | vk3 laskarit |
+|  13.4.| 0.5  | vk4 tiedustele kotukselta yhdyssana-aineistoja |
+|  14.4.| 1.25 | vk4 tee SQL-tietokanta yhdyssanoista |
+|  15.4.| 0.5 | vk4 poista .DS_Storet  |
+|  15.4.| 0.5 | vk4 ota checkstyle käyttöön  |
+|  yht  | 19.5 | |
+
 
 
 # työaikakirjanpito: harjoitustyö
