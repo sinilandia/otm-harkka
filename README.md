@@ -7,6 +7,7 @@
 
 [tuntikirjanpito](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/tuntikirjanpito.md)
 
+[arkkitehtuuri.md](https://github.com/sinilandia/otm-harkka/blob/master/dokumentaatio/arkkitehtuuri.md)
 
 
 ## Komentorivitoiminnot
