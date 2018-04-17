@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package domain;
 
 /**
  *
@@ -43,7 +43,7 @@ public class Tehtava {
 
     @Override
     public String toString() {
-        return "Tehtava" + " id=" + id + ", etusana=" + etusana + ", keskisana=" + keskisana + ", takasana=" + takasana + '}';
+        return "Tehtava" + " id=" + id + ", etusana=" + etusana + ", keskisana=" + keskisana + ", takasana=" + takasana;
     }
     
     

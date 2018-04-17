@@ -1,10 +1,12 @@
+package domain;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
-import main.Tehtava;
+import domain.Tehtava;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -26,7 +28,7 @@ public class TehtavaTest {
     @BeforeClass
     public static void setUpClass() {
         
-        // pitääkö tähän tehdä Scenet ja Staget jne???
+        
     }
     
     @AfterClass
@@ -35,7 +37,7 @@ public class TehtavaTest {
     
     @Before
     public void setUp() {
-        tehtava = new Tehtava();
+        tehtava = new Tehtava(1, "viini", "marja", "puuro");
     }
     
     @After

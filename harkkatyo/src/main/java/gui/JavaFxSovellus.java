@@ -6,8 +6,9 @@
 
 //selvitä: miten nimeän paketit???
 
-package main;
+package gui;
 
+import domain.Tehtava;
 import java.sql.*;
 import java.util.*;
 import javafx.application.Application;
@@ -50,37 +51,23 @@ public class JavaFxSovellus extends Application {
         Button uusiTehtavaNappi = new Button("Uusi tehtävä!");
         tulosasettelu.add(uusiTehtavaNappi, 1, 5);
         Scene tulosnakyma = new Scene(tulosasettelu);
-        
-        //olisko Scene vaihtoehto popup-ikkunalle
-        //tulos popup-ikkunassa
-//        Popup popup = new Popup();
-//        popup.setX(300);
-//        popup.setY(300);
-//        popup.setAutoFix(true);
-//        popup.setAutoHide(true);    
+         
         
         
-        //tarkista onko vastaus oikein
+        //tarkista onko vastaus oikein, refaktoroi
         tarkistusnappi.setOnAction((event) ->{
             Boolean oikein = tehtava1.tarkista(arvaus.getText().trim()); 
             
-            //popup-ikkuna ilmoittaa oliko oikein
-            String tulos = "";
             if (oikein) {
                 tulosasettelu.add(new Label("Oikein!"), 1, 1);
                 
-                //tulos = "Arvasit oikein!";
                 
             } else {
                 tulosasettelu.add(new Label("Väärin"), 1, 1);
-                //tulos = "Väärin meni - kokeile uudestaan!";
             }         
             
             ikkuna.setScene(tulosnakyma);
-            
-//            popup.getContent().add(new Label(tulos));
-//            popup.show(ikkuna);
-            //labelit++ menee päällekkäin - ratkaisu?
+         
         });
         
         Scene tehtavanakyma = new Scene(tehtavaasettelu);

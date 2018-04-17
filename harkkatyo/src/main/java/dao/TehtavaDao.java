@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main;
+package dao;
 
+import domain.Tehtava;
 import java.sql.*;
 import java.util.*;
 
@@ -56,7 +57,7 @@ public class TehtavaDao implements Dao<Tehtava, Integer> {
         List<Tehtava> tehtavat = new ArrayList<>();
         while (rs.next()) {
             Tehtava t = new Tehtava(rs.getInt("id"), rs.getString("etu"), 
-            rs.getString("keski"), rs.getString("taka"));
+                rs.getString("keski"), rs.getString("taka"));
             
             tehtavat.add(t);
         } 
