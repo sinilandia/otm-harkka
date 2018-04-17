@@ -14,7 +14,9 @@
 |  14.4.| 1.25 | vk4 tee SQL-tietokanta yhdyssanoista |
 |  15.4.| 0.5 | vk4 poista .DS_Storet  |
 |  15.4.| 0.5 | vk4 ota checkstyle käyttöön  |
-|  yht  | 19.5 | |
+|  17.4.| 0.5 | vk4 lisää arkkitehtuuri.md |
+|  17.4.|     |   |
+|  yht  | 20.0 | |
 
 
 
