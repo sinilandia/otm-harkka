@@ -10,14 +10,16 @@ package main;
  * @author siniliu
  */
 public class Tehtava {
+    private Integer id;
     private String etusana;
     private String  keskisana;
     private String takasana;
 
-    public Tehtava() {
-        etusana = "viini";
-        keskisana = "marja";
-        takasana = "puuro";
+    public Tehtava(Integer nro, String etu, String keski, String taka) {
+        id = nro;
+        etusana = etu;
+        keskisana = keski;
+        takasana = taka;
     }
 
     public String getEtusana() {
@@ -36,9 +38,14 @@ public class Tehtava {
         if (arvaus.equals(keskisana)) { 
             return true; 
         }
-        return false;
-
-        
+        return false; 
     }
+
+    @Override
+    public String toString() {
+        return "Tehtava" + " id=" + id + ", etusana=" + etusana + ", keskisana=" + keskisana + ", takasana=" + takasana + '}';
+    }
+    
+    
     
 }
