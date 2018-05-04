@@ -50,6 +50,9 @@ public class JavaFxSovellus extends Application {
         tulosasettelu.setPrefSize(600, 380);
         Button uusiTehtavaNappi = new Button("Uusi tehtävä!");
         tulosasettelu.add(uusiTehtavaNappi, 1, 5);
+        
+        Label tulos = new Label("");
+        tulosasettelu.add(tulos, 1, 1);
         Scene tulosnakyma = new Scene(tulosasettelu);
          
         
@@ -58,12 +61,11 @@ public class JavaFxSovellus extends Application {
         tarkistusnappi.setOnAction((event) ->{
             Boolean oikein = tehtava1.tarkista(arvaus.getText().trim()); 
             
-            if (oikein) {
-                tulosasettelu.add(new Label("Oikein!"), 1, 1);
-                
-                
+            //poista nappi, kun uusi tehtävä
+            if (oikein) {            
+               tulos.setText("Oikein.");
             } else {
-                tulosasettelu.add(new Label("Väärin"), 1, 1);
+                tulos.setText("Väärin.");
             }         
             
             ikkuna.setScene(tulosnakyma);
