@@ -8,26 +8,39 @@
 
 package gui;
 
+import dao.Database;
+import dao.TehtavaDao;
 import domain.Tehtava;
+import domain.TehtavaService;
 import java.sql.*;
 import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Popup;
 import javafx.stage.Stage;
 
 public class JavaFxSovellus extends Application {
+    
+    private TehtavaService tehtavaservice;
+    private TehtavaDao tehtavadao;
+    private Database database;
+    private Tehtava tehtava;
+    
+    @Override
+    public void init() throws Exception {
+        this.database = new Database("jdbc:sqlite:yhdyssanat.db");
+        this.tehtavadao = new TehtavaDao(this.database);
+        this.tehtavaservice = new TehtavaService(tehtavadao);
+        this.tehtava = tehtavadao.findOne(tehtavaservice.seuraava());
+    }
 
     @Override
-    public void start(Stage ikkuna) {
-        //korjaa > refaktoroi tehtavan luonti
-        Tehtava tehtava1 = new Tehtava(1, "viini", "marja", "puuro");
-        Tehtava tehtava2 = new Tehtava(2, "villi", "kissa", "peto");
+    public void start(Stage ikkuna) throws SQLException {
         
         
         //TEHTAVA SCENE
@@ -35,10 +48,16 @@ public class JavaFxSovellus extends Application {
         GridPane tehtavaasettelu = new GridPane();
         tehtavaasettelu.add(new Label("logout"),0,0);
         tehtavaasettelu.add(new Label("username"),2,0);
-        TextField arvaus = new TextField();
-        tehtavaasettelu.add(new Label("viini"),0,4);
+        TextField arvaus = new TextField();      
+        
+        String etusana = tehtava.getEtusana();
+        String takasana = tehtava.getTakasana();
+        
+        Label etusanalabel = new Label(etusana);
+        Label takasanalabel = new Label(takasana);
+        tehtavaasettelu.add(etusanalabel,0,4);
         tehtavaasettelu.add(arvaus,1,4);
-        tehtavaasettelu.add(new Label("puuro"),3,4);
+        tehtavaasettelu.add(takasanalabel,3,4);
         Button tarkistusnappi = new Button("Tarkista!");
         tehtavaasettelu.add(tarkistusnappi, 1, 5);
         tehtavaasettelu.setPrefSize(600, 380);
@@ -57,15 +76,15 @@ public class JavaFxSovellus extends Application {
          
         
         
-        //tarkista onko vastaus oikein, refaktoroi
+        //tarkista onko vastaus oikein
+        //muutetaan labelin tekstiä tuloksen mukaan
         tarkistusnappi.setOnAction((event) ->{
-            Boolean oikein = tehtava1.tarkista(arvaus.getText().trim()); 
+            Boolean oikein = tehtava.tarkista(arvaus.getText().trim()); 
             
-            //poista nappi, kun uusi tehtävä
             if (oikein) {            
-               tulos.setText("Oikein.");
+               tulos.setText("Oikein!");
             } else {
-                tulos.setText("Väärin.");
+                tulos.setText("Väärin!");
             }         
             
             ikkuna.setScene(tulosnakyma);
@@ -77,10 +96,16 @@ public class JavaFxSovellus extends Application {
         
         //refaktoroi näin 2.2 https://materiaalit.github.io/ohjelmointi-s17/part12/
         uusiTehtavaNappi.setOnAction((event) -> {
+            try {
+                this.tehtava = tehtavadao.findOne(tehtavaservice.seuraava());
+            } catch (SQLException ex) {
+                Logger.getLogger(JavaFxSovellus.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                etusanalabel.setText(tehtava.getEtusana());
+                takasanalabel.setText(tehtava.getTakasana());
+
            ikkuna.setScene(tehtavanakyma);
        });
-        
-
 
         ikkuna.setScene(tehtavanakyma);
         ikkuna.show();
@@ -88,17 +113,6 @@ public class JavaFxSovellus extends Application {
 
     public static void main(String[] args) throws Exception {
         launch(JavaFxSovellus.class);
-        
-        
-        
-
-        //toimii
-//        Database database = new Database("jdbc:sqlite:yhdyssanat.db");
-//        TehtavaDao tehtavat = new TehtavaDao(database);
-//        
-//        List<Tehtava> listaus = tehtavat.findAll();
-//        
-//        listaus.forEach(t -> System.out.println(t));
         
     }
     
